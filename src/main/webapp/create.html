@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+		<legend>Insertion data</legend>
+		<form action="insert" method="post">
+			<table>
+				<tr>
+					<th>Name:</th>
+					<td><input type="text" name="Name"></td>
+				</tr>
+				<tr>
+					<th>Mobile:</th>
+					<td><input type="tel" name="mobile" pattern="{0-9}[10]"></td>
+				</tr>
+				<tr>
+					<th>Email:</th>
+					<td><input type="email" name="email"></td>
+				</tr>
+				<tr>
+					<th>Gender:</th>
+					<td><input type="radio" name="gender" value="male">Male <input
+						type="radio" name="gender" value="female">FeMale</td>
+				</tr>
+				<tr>
+					<th>Date of Birth:</th>
+					<td><input type="date" name="dob"></td>
+				</tr>
+				<tr>
+					<th>Address:</th>
+					<td><textarea rows="5" cols="30" name="address"></textarea></td>
+				</tr>
+				<tr>
+					<th>Languages known:</th>
+					<td><input type="checkbox" name="language" value="kannada">Kannada <input
+						type="checkbox" name="language" value="english">English <input
+						type="checkbox" name="language" value="hindi">Hindi</td>
+				</tr>
+				<tr>
+					<th>Country:</th>
+					<td><select name="country">
+							<option>India</option>
+							<option>Korea</option>
+							<option>USA</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><button type="reset">Cancel</button></td>
+					<td><button>Submit</button></td>
+				</tr>
+			</table>
+		</form>
+		<br> <br> <a href="home.html"><button>HOME</button></a>
+	</fieldset>
+</body>
+</html>
